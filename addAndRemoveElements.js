@@ -9,3 +9,13 @@ function onAddListItemButtonClick(){
     let skillList = document.getElementById("skillList");
     skillList.appendChild(listItem);
 }
+
+function onRemoveListItemButtonClick(){
+    let skillList = document.getElementById("skillList");
+    console.log(skillList);
+    let lastElement = skillList.lastElementChild
+    console.log(lastElement != null);
+    if (lastElement) {
+        skillList.removeChild(lastElement);
+    }
+}
